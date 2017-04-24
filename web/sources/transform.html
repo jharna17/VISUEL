@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Transformer</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="transform.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="bargraph.css">
+        <link rel="stylesheet" href="pie.css">
+        <!--<link rel="stylesheet" href="table.css">-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+        <script src="https://d3js.org/d3.v4.js"></script>
+        <script src="transform_1.js"></script>
+    </head>
+    <body>
+        <ul class="topnav">
+          <li><a class="active" href="./index.html">Visuel</a></li>
+          <li> </li>
+          <li><a href="javascript:void(0);">Workspace</a></li>
+          <li><a href="javascript:void(0);">Results</a></li>          
+          <li class="right"><a href="#about">About</a></li>
+          <li class="right"><a href="#about">Generate results</a></li>
+        </ul>
+        <ul class="infobar">
+          <li><a id="fname" class="active" href="javascript:void(0);"></a></li>
+          <li> </li>
+          <li><a id="fsize" href="javascript:void(0);"></a></li>
+          <li><a href="javascript:void(0);" id="ncol"></a></li>
+          <li><a href="javascript:void(0);" id="nrow"></a></li>
+        </ul>
+        
+        <div id="tablediv">
+            <table id="table">
+                
+            </table>
+        </div>
+        <ul class="topnav" id="graphoptions">
+          <li><a id='bargraphbutton' href="javascript:void(0);">Bar Graph</a></li>
+          <li><a id='piechartbutton' href="javascript:void(0);">Pie Chart</a></li>          
+<!--          <li class="right"><a href="#about">About</a></li>
+          <li class="right"><a href="#about">Generate results</a></li>-->
+        </ul>
+        
+        <div id="x" style="display: none; margin: 10px 10px"> Select x-axis dimensions</div>
+        <div id="y" style="display: none; margin: 10px 10px"> Select y-axis dimensions</div>
+        
+        <div id="xp" style="display: none; margin: 10px 10px"> Select x-axis dimensions</div>
+        <div id="yp" style="display: none; margin: 10px 10px"> Select y-axis dimensions</div>
+    </body>
+</html>

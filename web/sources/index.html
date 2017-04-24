@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Visuel Home</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="table.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+        <script src="https://d3js.org/d3.v4.js"></script>
+        <script src="index.js"></script>
+    </head>
+    <body>
+
+        <ul class="topnav">
+            <li><a class="active" href="./index.html">Visuel</a></li>
+          <li> </li>
+          <li><a href="#news">Workspace</a></li>
+          <li><a href="#contact">Results</a></li>
+          <li class="right"><a href="#about">About</a></li>
+        </ul>
+        <div id="file-input"> 
+            <input type="file" id="uploadInput" class="hidden" multiple name="files" style="position: initial;z-index: 1;"/>
+            <label for="uploadInput" style=" color: black;z-index: 3;margin: 3% 9%; background-color: rgba(0,0,0,0.4); opacity: 0.5">
+                Select file
+            </label>
+        </div>
+        <div style="overflow-x:auto;">
+          <table id="fp">
+            <tr>
+              <th>File Name</th>
+              <th>         </th>
+              <th>Size</th>
+              <th>Type</th>
+            </tr>
+          </table>
+        </div>
+    </body>
+</html>
+

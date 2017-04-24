@@ -1,0 +1,90 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 14 Nov, 2016, 2:19:45 AM
+    Author     : Jharna
+*/
+body {margin: 0;}
+
+ul.infobar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: appworkspace;
+}
+
+ul.infobar li {float: left;}
+
+ul.infobar li a {
+    display: block;
+    color: brown;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.infobar li a:hover:not(.active) {background-color: antiquewhite;}
+
+ul.infobar li a.active {background-color:blanchedalmond;}
+
+ul.infobar li.right {float: right;}
+
+@media screen and (max-width: 600px){
+    ul.infobar li.right,
+    ul.infobar li {float: none;}
+}
+
+
+
+#tablediv{
+    width: 100%;
+    overflow: scroll;
+    border: 2px black;
+    height: 300px;
+}
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 13 Nov, 2016, 7:05:21 PM
+    Author     : Jharna
+*/
+
+table {
+    //border: 2px blue;
+    //border-bottom: 2px blue;    
+    width: 100%;
+}
+
+td {
+    text-align: left;
+    font-size: 15px;
+    //letter-spacing: 1px;
+    padding: 3px;
+/*    border-left: 2px blue;
+    border-right: 2px blue;
+    border-top: 2px blue;
+    border-bottom: 2px blue;*/
+}
+
+th{
+    text-align: center;
+    font-size: 15px;
+    //letter-spacing: 1px;
+    padding: 3px;
+    
+    
+/*    border-left: 2px blue;
+    border-right: 2px blue;
+    border-top: 2px blue;
+    border-bottom: 2px blue;*/
+}
+
+tr:nth-child(even){background-color: bisque}
